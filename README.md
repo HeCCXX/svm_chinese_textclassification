@@ -8,4 +8,4 @@ use Python and UI with pyqt5.
 * ### Second : Feature vector extraction using TF-IDF algorithm.
 * ### Third : Using the libsvm tool for data scaling.
 * ### finally ： using SVM model train and prediction classification.
-![文本分类界面图]()
+![文本分类界面图](https://github.com/HeCCXX/svm_chinese_textclassification/display.png)
