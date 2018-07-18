@@ -1,0 +1,90 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'svm_ui.ui'
+#
+# Created by: PyQt5 UI code generator 5.9.2
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(800, 782)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.Btn_train = QtWidgets.QPushButton(self.centralwidget)
+        self.Btn_train.setGeometry(QtCore.QRect(30, 40, 121, 41))
+        self.Btn_train.setObjectName("Btn_train")
+        self.Btn_test = QtWidgets.QPushButton(self.centralwidget)
+        self.Btn_test.setGeometry(QtCore.QRect(200, 40, 131, 41))
+        self.Btn_test.setObjectName("Btn_test")
+        self.label = QtWidgets.QLabel(self.centralwidget)
+        self.label.setGeometry(QtCore.QRect(40, 200, 131, 41))
+        self.label.setObjectName("label")
+        self.label_2 = QtWidgets.QLabel(self.centralwidget)
+        self.label_2.setGeometry(QtCore.QRect(40, 270, 131, 31))
+        self.label_2.setObjectName("label_2")
+        self.Btn_go = QtWidgets.QPushButton(self.centralwidget)
+        self.Btn_go.setGeometry(QtCore.QRect(440, 130, 111, 41))
+        self.Btn_go.setObjectName("Btn_go")
+        self.groupBox = QtWidgets.QGroupBox(self.centralwidget)
+        self.groupBox.setGeometry(QtCore.QRect(40, 420, 671, 301))
+        self.groupBox.setObjectName("groupBox")
+        self.textEdit = QtWidgets.QTextEdit(self.groupBox)
+        self.textEdit.setGeometry(QtCore.QRect(10, 20, 651, 271))
+        self.textEdit.setObjectName("textEdit")
+        self.Btn_seg = QtWidgets.QPushButton(self.centralwidget)
+        self.Btn_seg.setGeometry(QtCore.QRect(390, 40, 131, 41))
+        self.Btn_seg.setObjectName("Btn_seg")
+        self.label_3 = QtWidgets.QLabel(self.centralwidget)
+        self.label_3.setGeometry(QtCore.QRect(160, 210, 401, 31))
+        self.label_3.setText("")
+        self.label_3.setObjectName("label_3")
+        self.label_4 = QtWidgets.QLabel(self.centralwidget)
+        self.label_4.setGeometry(QtCore.QRect(160, 270, 401, 31))
+        self.label_4.setText("")
+        self.label_4.setObjectName("label_4")
+        self.label_5 = QtWidgets.QLabel(self.centralwidget)
+        self.label_5.setGeometry(QtCore.QRect(220, 360, 291, 31))
+        self.label_5.setText("")
+        self.label_5.setObjectName("label_5")
+        self.Btn_vec = QtWidgets.QPushButton(self.centralwidget)
+        self.Btn_vec.setGeometry(QtCore.QRect(590, 40, 161, 41))
+        self.Btn_vec.setObjectName("Btn_vec")
+        self.Btn_classify = QtWidgets.QPushButton(self.centralwidget)
+        self.Btn_classify.setGeometry(QtCore.QRect(610, 130, 141, 41))
+        self.Btn_classify.setObjectName("Btn_classify")
+        self.label_6 = QtWidgets.QLabel(self.centralwidget)
+        self.label_6.setGeometry(QtCore.QRect(40, 140, 91, 21))
+        self.label_6.setObjectName("label_6")
+        self.param = QtWidgets.QTextEdit(self.centralwidget)
+        self.param.setGeometry(QtCore.QRect(120, 140, 231, 31))
+        self.param.setObjectName("param")
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 23))
+        self.menubar.setObjectName("menubar")
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.Btn_train.setText(_translate("MainWindow", "选择训练集"))
+        self.Btn_test.setText(_translate("MainWindow", "选择测试集"))
+        self.label.setText(_translate("MainWindow", "训练集语料库路径："))
+        self.label_2.setText(_translate("MainWindow", "测试集语料库路径："))
+        self.Btn_go.setText(_translate("MainWindow", "训练"))
+        self.groupBox.setTitle(_translate("MainWindow", "分类结果："))
+        self.Btn_seg.setText(_translate("MainWindow", "预处理"))
+        self.Btn_vec.setText(_translate("MainWindow", "创建特征向量文件"))
+        self.Btn_classify.setText(_translate("MainWindow", "文本分类"))
+        self.label_6.setText(_translate("MainWindow", "训练参数："))
+
